@@ -1,3 +1,6 @@
+html, body {
+    overflow-x: hidden;
+}
 body {
     font-family: "Playfair Display", "Roboto";
     margin: 0;
@@ -17,8 +20,6 @@ header {
     padding-top: 450px;
     justify-content: center;
     align-items: center;
-    padding-left: 16rem;
-    padding-right: 16rem;
     transform: skewY(6deg);
 }
 
@@ -88,7 +89,6 @@ main {
     margin-bottom: .5rem;
     font-size: .75rem;
 }
-
 
 .screenshot {
     height: 200px;
@@ -183,6 +183,93 @@ footer h4 {
 .footer-buttons {
     display: flex;
     gap: .5rem;
-    
 }
+
+@media (max-width: 1000px) and (min-width: 601px) {
+    .header-content {
+        display: block;
+    }
+    
+    .top-photo {
+        float: left;
+        transform: translateX(-25px);
+        z-index: 1;
+    }
+    
+    .about-me {
+        display: block;
+        transform: translateY(25px);
+    
+    }
+    
+    .header-buttons {
+        margin-left: 425px;
+    }
+
+    .projects-container {
+        grid-template-columns: 1fr 1fr;
+        min-width: 600px;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        
+    }
+
+    header {
+        margin-top: -450px;
+        transform: translateY(-400px) skewY(-9deg);
+        max-width: 100vw;
+    }
+    
+    .header-content {
+        max-width: 100vw;
+        flex-direction: column;
+        padding-top: 450px;
+        transform: translateY(400px) skewY(9deg);
+        
+
+    }
+
+    .about-me {
+        max-width: 100%;
+        min-width: 0;
+        padding: 1rem;
+        box-shadow: none;
+    }
+
+    .top-photo {
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    main {
+        box-sizing: border-box;
+        margin-top: 1rem;
+    }
+
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
+
+    footer {
+        flex-direction: column;
+        padding-bottom: 0;
+    }
+
+    .footer-div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer p {
+        margin-bottom: 0;
+    }
+
+    footer h4, .footer-buttons {
+        align-self: center;
+    }
+}
+
 
