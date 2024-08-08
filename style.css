@@ -1,0 +1,188 @@
+body {
+    font-family: "Playfair Display", "Roboto";
+    margin: 0;
+    width: 100vw;
+}
+
+header {
+    background-color: #51c4d6;
+    transform: skewY(-6deg);
+    margin-top: -400px;
+    display: flex;
+    justify-content: center;
+}
+
+.header-content {
+    display: flex;
+    padding-top: 450px;
+    justify-content: center;
+    align-items: center;
+    padding-left: 16rem;
+    padding-right: 16rem;
+    transform: skewY(6deg);
+}
+
+.top-photo {
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    position: relative;
+}
+
+.about-me {
+    background-color: white;
+    min-width: 550px;
+    max-width: 550px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.about-me h1 {
+    margin-block: 0;
+}
+
+.header-buttons img, .footer-buttons img {
+    height: auto;
+    width: 32px;
+}
+
+.header-buttons {
+    align-self: flex-end;
+}
+
+main {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projects-container {
+    min-width: 1000px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    gap: 2rem;
+}
+
+.projects-container div {
+    width: 250px;
+    
+}
+
+.project {
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.projects-container div h3 {
+    margin: .5rem;
+}
+
+.projects-container div p {
+    margin-top: 0;
+    margin-left: .5rem;
+    margin-right: .5rem;
+    margin-bottom: .5rem;
+    font-size: .75rem;
+}
+
+
+.screenshot {
+    height: 200px;
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+
+}
+
+.project-one .screenshot {
+    background-color: rgb(212, 49, 49);
+}
+
+.project-two .screenshot {
+    background-color: lavender;
+}
+
+.project-three .screenshot {
+    background-color: rgb(40, 151, 103);
+}
+
+.project-four .screenshot {
+    background-color: pink;
+}
+
+.project-five .screenshot {
+    background-color: rgba(255, 193, 78, 0.979);
+}
+
+.project-six .screenshot {
+    background-color: rgb(73, 152, 195);
+}
+
+
+.project-bottom {
+    height: 125px;
+}
+
+footer {
+    display: flex;
+    background-color: #51c4d6;
+    justify-content: center;
+    padding: 50px;
+    gap: 2rem;
+    color: white;
+    align-items: center;
+}
+
+footer h4 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.address {
+    margin-bottom: 0;
+}
+
+.phone-icon {
+    padding-top: .35rem;
+}
+
+.email-icon {
+    padding-top: .31rem;
+}
+
+.phone-icon, .email-icon {
+    height: 1rem;
+    width: 1rem;
+    filter: invert(100%) sepia(0%) saturate(7496%) hue-rotate(138deg) brightness(102%) contrast(102%);
+    padding-right: .5rem;
+}
+
+
+.phone-div, .email-div {
+    display: flex;
+    margin-top: 1rem;
+}
+
+.email-div {
+    margin-bottom: 1rem;
+}
+
+.phone-div p, .email-div p {
+    margin: 0;
+}
+
+.bottom-photo {
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.footer-buttons {
+    display: flex;
+    gap: .5rem;
+    
+}
+

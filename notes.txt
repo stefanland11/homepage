@@ -1,0 +1,11 @@
+mobile: 
+thinner crop on top photo
+no card styling
+buttons below paragraph
+each project displayed as one column
+thinner version of bottom photo
+
+tablet version: 
+photo overlaps about me card
+/two columns for projects
+cropped bottom photo
